@@ -70,6 +70,12 @@ const SignUp = ({ onSwitchToSignUp }) => {
         e.preventDefault();
         let valid = true;
 
+        console.log('Email:', email);
+        console.log('Username:', username);
+        console.log('Password:', password);
+        console.log('Confirm Password:', confirmPassword);
+        console.log('Phone Number:', phoneNumber);
+
         if (!validateEmail(email)) {
             setEmailError('Invalid email address');
             valid = false;
@@ -109,10 +115,6 @@ const SignUp = ({ onSwitchToSignUp }) => {
         }
 
         if (valid) {
-            console.log('Email:', email);
-            console.log('Username:', username);
-            console.log('Password:', password);
-            console.log('Phone Number:', phoneNumber);
             Swal.fire({
                 title: 'Success!',
                 text: 'You have successfully signed up!',
@@ -203,7 +205,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
                     className=""
                     onClick={handleSubmit}
                 />
-                <p className='font-normal text-xs tracking-tighter text-white pb-1 text-center mt-6'>Already have an account? <Link href='/Login' className='text-blue-500'>Login</Link></p>
+                <p className='font-normal text-xs tracking-tighter text-white pb-1 text-center mt-6'>Already have an account? <Link href='/login' className='text-blue-500'>Login</Link></p>
             </div>
         </div>
     );
