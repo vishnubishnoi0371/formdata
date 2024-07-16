@@ -26,7 +26,7 @@ const PasswordForget = ({ onSwitchToSignUp }) => {
         let valid = true;
 
         if (!validateEmail(email)) {
-            setEmailError('Invalid email address');
+            setEmailError('Required email address');
             valid = false;
         } else {
             setEmailError('');
