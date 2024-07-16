@@ -131,7 +131,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
 
     return (
         <div className='bg-black min-h-screen flex items-center justify-center'>
-            <div className='max-w-[376px] mx-auto border p-7 w-full'>
+            <div className='max-w-[376px] mx-auto border rounded-xl p-7 w-full'>
                 <h1 className='text-5xl text-center text-white font-bold'>Form</h1>
                 <div className='flex gap-3 items-center'>
                     <div className='pt-[21px]'>
@@ -199,7 +199,6 @@ const SignUp = ({ onSwitchToSignUp }) => {
                         {confirmPasswordError && <p className='text-red-500 text-xs'>{confirmPasswordError}</p>}
                     </div>
                 </div>
-                <a href="#" className='font-normal text-xs text-white  tracking-tighter mt-2 after:w-full after:absolute relative after:h-[1px] after:left-0 after:bottom-[-.5px] after:bg-malachite hover:after:w-0 hover:after:left-[50%] after:duration-300 after:ease-in-out'>Forgot Password?</a>
                 <Button
                     text="Sign Up"
                     className=""

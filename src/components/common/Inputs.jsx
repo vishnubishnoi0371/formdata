@@ -9,7 +9,7 @@ const Inputs = ({ type, placeholder, inputuse, eyeclasses, value, onChange, togg
                 <input
                     type={type}
                     placeholder={placeholder}
-                    className='placeholder:font-normal w-full border group relative p-2 outline-none bg-transparent placeholder:text-sm  placeholder:text-white text-white font-normal leading-121 text-sm placeholder:opacity-40'
+                    className='placeholder:font-normal w-full border rounded-lg group relative p-2 outline-none bg-transparent placeholder:text-sm  placeholder:text-white text-white font-normal leading-121 text-sm placeholder:opacity-40'
                     value={value}
                     onChange={onChange}
                 />
