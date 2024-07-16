@@ -205,7 +205,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
                     className=""
                     onClick={handleSubmit}
                 />
-                <p className='font-normal text-xs tracking-tighter text-white pb-1 text-center mt-6'>Already have an account? <Link href='/login' className='text-blue-500'>Login</Link></p>
+                <p className='font-normal text-xs tracking-tighter text-white pb-1 text-center mt-6'>Already have an account? <Link href='/loginuser' className='text-blue-500'>Login</Link></p>
             </div>
         </div>
     );

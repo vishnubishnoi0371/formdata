@@ -1,9 +1,9 @@
 import LoginInput from '@/components/login/LoginInput'
 
 const page = () => {
-  return (
-    <LoginInput />
-  )
+    return (
+        <LoginInput />
+    )
 }
 
 export default page
