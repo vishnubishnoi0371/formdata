@@ -199,7 +199,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
                         {confirmPasswordError && <p className='text-red-500 text-xs'>{confirmPasswordError}</p>}
                     </div>
                 </div>
-                <a href="" className='font-normal text-xs text-white text-malachite tracking-tighter mt-2 after:w-full after:absolute relative after:h-[1px] after:left-0 after:bottom-[-.5px] after:bg-malachite hover:after:w-0 hover:after:left-[50%] after:duration-300 after:ease-in-out'>Forgot Password?</a>
+                <a href="#" className='font-normal text-xs text-white  tracking-tighter mt-2 after:w-full after:absolute relative after:h-[1px] after:left-0 after:bottom-[-.5px] after:bg-malachite hover:after:w-0 hover:after:left-[50%] after:duration-300 after:ease-in-out'>Forgot Password?</a>
                 <Button
                     text="Sign Up"
                     className=""
