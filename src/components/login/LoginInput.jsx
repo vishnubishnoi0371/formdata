@@ -48,7 +48,7 @@ const LoginInput = ({ onSwitchToSignUp }) => {
         let valid = true;
 
         if (!validateEmail(email)) {
-            setEmailError('Invalid email address');
+            setEmailError('Required email address');
             valid = false;
         } else {
             setEmailError('');
@@ -57,7 +57,7 @@ const LoginInput = ({ onSwitchToSignUp }) => {
 
 
         if (!validatePassword(password)) {
-            setPasswordError('Invalid password');
+            setPasswordError('Required password');
             valid = false;
         } else {
             setPasswordError('');
@@ -79,7 +79,7 @@ const LoginInput = ({ onSwitchToSignUp }) => {
     return (
         <div className='bg-black min-h-screen flex items-center justify-center'>
             <div className='max-w-[376px] mx-auto border rounded-xl p-7 w-full'>
-                <h1 className='text-5xl text-center text-white font-bold'>Form</h1>
+                <h1 className='text-5xl text-center text-white font-medium'>Login ID</h1>
 
                 <div className='pt-[21px]'>
                     <Inputs
@@ -108,7 +108,7 @@ const LoginInput = ({ onSwitchToSignUp }) => {
                     {passwordError && <p className='text-red-500 text-xs'>{passwordError}</p>}
                 </div>
 
-                <a href="#" className='font-normal text-xs text-white leading-121 text-malachite tracking-tighter mt-2 relative after:w-full after:absolute after:h-[1px] after:left-0 after:bottom-[-.5px] after:bg-malachite hover:after:w-0 hover:after:left-[50%] after:duration-300 after:ease-in-out'>Forgot Password?</a>
+                <Link href="/password" className='font-normal text-xs text-white leading-121 text-malachite tracking-tighter mt-2 relative after:w-full after:absolute after:h-[1px] after:left-0 after:bottom-[-.5px] after:bg-malachite hover:after:w-0 hover:after:left-[50%] after:duration-300 after:ease-in-out'>Forgot Password?</Link>
                 <Button
                     text="Login"
                     className="mt-4"

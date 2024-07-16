@@ -77,28 +77,28 @@ const SignUp = ({ onSwitchToSignUp }) => {
         console.log('Phone Number:', phoneNumber);
 
         if (!validateEmail(email)) {
-            setEmailError('Invalid email address');
+            setEmailError('Required email address');
             valid = false;
         } else {
             setEmailError('');
         }
 
         if (!validateUsername(username)) {
-            setUsernameError('Invalid username');
+            setUsernameError('Required username');
             valid = false;
         } else {
             setUsernameError('');
         }
 
         if (!validatePassword(password)) {
-            setPasswordError('Invalid Password');
+            setPasswordError('Required Password');
             valid = false;
         } else {
             setPasswordError('');
         }
 
         if (confirmPassword === '') {
-            setConfirmPasswordError('Invalid Confirm password');
+            setConfirmPasswordError('Required Confirm password');
             valid = false;
         } else if (password !== confirmPassword) {
             setConfirmPasswordError('Passwords do not match');
@@ -108,7 +108,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
         }
 
         if (!validatePhoneNumber(phoneNumber)) {
-            setPhoneNumberError('Invalid phone number');
+            setPhoneNumberError('Required phone number');
             valid = false;
         } else {
             setPhoneNumberError('');
@@ -132,7 +132,7 @@ const SignUp = ({ onSwitchToSignUp }) => {
     return (
         <div className='bg-black min-h-screen flex items-center justify-center'>
             <div className='max-w-[376px] mx-auto border rounded-xl p-7 w-full'>
-                <h1 className='text-5xl text-center text-white font-bold'>Form</h1>
+                <h1 className='text-5xl text-center text-white font-medium'>Sign Up</h1>
                 <div className='flex gap-3 items-center'>
                     <div className='pt-[21px]'>
                         <Inputs
